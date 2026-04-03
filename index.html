@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 티켓</title>
+    <style>
+        body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <img id="ticket" src="">
+    <script>
+        const no = new URLSearchParams(window.location.search).get('no') || '1';
+        document.getElementById('ticket').src = no + ".png";
+    </script>
+</body>
+</html>
